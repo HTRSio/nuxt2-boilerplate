@@ -44,7 +44,9 @@ export default {
     // https://i18n.nuxtjs.org/setup
     '@nuxtjs/i18n',
     // https://github.com/nuxt-community/robots-module
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    // https://sitemap.nuxtjs.org/guide (always at end of array)
+    '@nuxtjs/sitemap'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -105,5 +107,11 @@ export default {
       Allow: '/',
       Sitemap: 'https://htrs.io/sitemap.xml'
     }
+  },
+  sitemap: {
+    hostname: 'https://htrs.io',
+    gzip: true
+    // i18n: true,
+    // nuxt-i18n notation (advanced)
   }
 }
