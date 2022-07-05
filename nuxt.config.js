@@ -42,7 +42,9 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://i18n.nuxtjs.org/setup
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -96,5 +98,12 @@ export default {
       onlyOnRoot: true // recommended
     },
     baseUrl: 'https://htrs.io'
+  },
+  robots: {
+    robots: {
+      UserAgent: '*',
+      Allow: '/',
+      Sitemap: 'https://htrs.io/sitemap.xml'
+    }
   }
 }
