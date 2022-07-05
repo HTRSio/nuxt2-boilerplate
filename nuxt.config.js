@@ -33,6 +33,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://tailwindcss.com/docs/guides/nuxtjs
     '@nuxt/postcss8',
+    // https://color-mode.nuxtjs.org
+    '@nuxtjs/color-mode',
     // https://github.com/nuxt-community/robots-module
     '@nuxtjs/robots',
     // https://github.com/fumeapp/nuxt-storm
@@ -132,5 +134,8 @@ export default {
     brotli: {
       threshold: 8192
     }
+  },
+  colorMode: {
+    classSuffix: ''
   }
 }
