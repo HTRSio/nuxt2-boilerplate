@@ -30,7 +30,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://tailwindcss.com/docs/guides/nuxtjs
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    // https://github.com/fumeapp/nuxt-storm
+    ['nuxt-storm', { nested: true }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
