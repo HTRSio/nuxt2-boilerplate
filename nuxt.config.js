@@ -27,6 +27,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://www.npmjs.com/package/nuxt-compress
+    'nuxt-compress',
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://tailwindcss.com/docs/guides/nuxtjs
@@ -121,6 +123,14 @@ export default {
   webfontloader: {
     google: {
       families: ['Roboto:&display=swap']
+    }
+  },
+  'nuxt-compress': {
+    gzip: {
+      threshold: 8192
+    },
+    brotli: {
+      threshold: 8192
     }
   }
 }
