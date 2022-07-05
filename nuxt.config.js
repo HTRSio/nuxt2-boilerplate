@@ -40,7 +40,9 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    // https://i18n.nuxtjs.org/setup
+    '@nuxtjs/i18n'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -65,5 +67,34 @@ export default {
         autoprefixer: {}
       }
     }
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'de',
+        iso: 'de-DE',
+        name: 'Deutsch',
+        file: 'de-DE.js',
+        flag: 'de.png',
+        sr: 'Sprache ändern'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en-US.js',
+        flag: 'en.png',
+        sr: 'Change language'
+      }
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true // recommended
+    },
+    baseUrl: 'https://htrs.io'
   }
 }
