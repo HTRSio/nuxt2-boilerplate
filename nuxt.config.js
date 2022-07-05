@@ -47,6 +47,8 @@ export default {
     '@nuxt/content',
     // https://i18n.nuxtjs.org/setup
     '@nuxtjs/i18n',
+    // https://www.npmjs.com/package/nuxt-webfontloader
+    'nuxt-webfontloader',
     // https://sitemap.nuxtjs.org/guide (always at end of array)
     '@nuxtjs/sitemap'
   ],
@@ -115,5 +117,10 @@ export default {
     gzip: true
     // i18n: true,
     // nuxt-i18n notation (advanced)
+  },
+  webfontloader: {
+    google: {
+      families: ['Roboto:&display=swap']
+    }
   }
 }
