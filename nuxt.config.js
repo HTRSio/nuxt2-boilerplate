@@ -31,6 +31,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://tailwindcss.com/docs/guides/nuxtjs
     '@nuxt/postcss8',
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots',
     // https://github.com/fumeapp/nuxt-storm
     ['nuxt-storm', { nested: true }]
   ],
@@ -45,8 +47,6 @@ export default {
     '@nuxt/content',
     // https://i18n.nuxtjs.org/setup
     '@nuxtjs/i18n',
-    // https://github.com/nuxt-community/robots-module
-    '@nuxtjs/robots',
     // https://sitemap.nuxtjs.org/guide (always at end of array)
     '@nuxtjs/sitemap'
   ],
